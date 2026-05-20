@@ -1,0 +1,6 @@
+node_modules/
+backend/.env
+backend/.ig_cookie.txt
+backend/tmp/
+*.log
+.DS_Store
