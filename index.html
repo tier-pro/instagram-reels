@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta_title">InstaReels - Download Instagram Reels Free | No Watermark</title>
+<meta name="description" data-i18n-att="content:meta_desc" content="Free Instagram Reels downloader. Download Reels in HD, 4K, no watermark, keep original audio. Works on all devices.">
+<meta name="keywords" content="instagram reels downloader, download instagram reels, reels saver, no watermark reels download, instagram reel saver">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://instasavvy.app/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="InstaSavvy - Free Instagram Content Downloader">
+<meta property="og:description" content="Download Instagram videos, photos, reels & stories in HD. Free, fast, no watermark.">
+<meta property="og:url" content="https://instasavvy.app/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/og-image.png">
+<meta property="og:site_name" content="InstaSavvy">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="InstaSavvy - Free Instagram Content Downloader">
+<meta name="twitter:description" content="Download Instagram videos, photos, reels & stories in HD. Free, fast, no watermark.">
+<meta name="twitter:image" content="/og-image.png">
+
+<!-- PWA -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#833ab4">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="InstaSavvy">
+<link rel="apple-touch-icon" href="/favicon.svg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "InstaSavvy",
+  "url": "https://instasavvy.app/",
+  "description": "Free Instagram content downloader supporting videos, photos, reels, stories, IGTV and profile pictures.",
+  "applicationCategory": "Multimedia",
+  "operatingSystem": "All",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+
+<!-- Styles -->
+<link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+<div class="animated-bg">
+  <div class="orb"></div>
+  <div class="orb"></div>
+  <div class="orb"></div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="/" class="logo" onclick="return navigate('/')">
+      <svg viewBox="0 0 28 28" fill="none"><rect x="2" y="2" width="24" height="24" rx="6" stroke="url(#ig)" stroke-width="2"/><circle cx="14" cy="14" r="5" stroke="url(#ig)" stroke-width="2"/><circle cx="20" cy="8" r="1.5" fill="url(#ig)"/><defs><linearGradient id="ig" x1="2" y1="2" x2="24" y2="24"><stop stop-color="#833ab4"/><stop offset=".5" stop-color="#fd1d1d"/><stop offset="1" stop-color="#fcb045"/></linearGradient></defs></svg>
+      InstaReels
+    </a>
+    <div class="nav-links">
+      <a href="/" onclick="return navigate('/')">Home</a>
+      <a href="/about" onclick="return navigate('/about')">About</a>
+      <a href="/faq" onclick="return navigate('/faq')">FAQ</a>
+      <a href="/blog" onclick="return navigate('/blog')">Blog</a>
+      <a href="/contact" onclick="return navigate('/contact')">Contact</a>
+    </div>
+    <div class="nav-right">
+      <select class="lang-select" id="langSelect" onchange="switchLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="de">Deutsch</option>
+        <option value="pt">Português</option>
+        <option value="ar">العربية</option>
+        <option value="hi">हिन्दी</option>
+        <option value="id">Bahasa Indonesia</option>
+        <option value="it">Italiano</option>
+        <option value="ja">日本語</option>
+        <option value="ko">한국어</option>
+        <option value="pl">Polski</option>
+        <option value="ro">Română</option>
+        <option value="ru">Русский</option>
+        <option value="th">ไทย</option>
+        <option value="tr">Türkçe</option>
+        <option value="uk">Українська</option>
+        <option value="vi">Tiếng Việt</option>
+        <option value="zh-CN">简体中文</option>
+        <option value="zh-TW">繁體中文</option>
+      </select>
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">🌙</button>
+      <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/" onclick="closeMobileMenu(); return navigate('/')">Home</a>
+  <a href="/about" onclick="closeMobileMenu(); return navigate('/about')">About</a>
+  <a href="/faq" onclick="closeMobileMenu(); return navigate('/faq')">FAQ</a>
+  <a href="/blog" onclick="closeMobileMenu(); return navigate('/blog')">Blog</a>
+  <a href="/contact" onclick="closeMobileMenu(); return navigate('/contact')">Contact</a>
+</div>
+
+<!-- ===== PAGE: HOME ===== -->
+<div class="page" id="page-home">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1 data-i18n="hero_title">Download Instagram Reels - No Watermark, HD Quality</h1>
+      <p data-i18n="hero_subtitle">Free, Fast, Simple - Download Reels in 1080p & 4K</p>
+      <div class="downloader-box">
+        <div class="input-group">
+          <input type="url" id="mainUrlInput" placeholder="Paste Instagram link here..." data-i18n-att="placeholder:input_placeholder">
+          <button class="btn btn-primary" onclick="handleDownload()">
+            <span data-i18n="btn_download">Download</span>
+          </button>
+        </div>
+        <div id="urlTypeBadge" class="url-type-badge" style="display:none"></div>
+        <div id="mainDownloadResult" class="download-result"></div>
+      </div>
+      <p style="font-size:0.82rem;color:var(--text-secondary);margin-top:-20px;" data-i18n="supported_types">Supports: Instagram Reels in HD, Full HD & 4K • No Watermark • No Login Required</p>
+    </div>
+  </section>
+
+  <!-- Features - Reels Focused -->
+  <section class="section" id="features">
+    <div class="container">
+      <h2 class="section-title" data-i18n="features_title">Why Use Our Reels Downloader?</h2>
+      <p class="section-subtitle" data-i18n="features_subtitle">The best free Instagram Reels downloader with powerful features</p>
+      <div class="features-grid">
+        <div class="feature-card"><div class="icon">⚡</div><h3>Fast Downloads</h3><p>Lightning-fast processing. Get your Reels in seconds.</p></div>
+        <div class="feature-card"><div class="icon">🚫</div><h3>No Watermark</h3><p>Download Reels without any watermark. Clean original quality.</p></div>
+        <div class="feature-card"><div class="icon">🔓</div><h3>No Registration</h3><p>No account needed. Just paste the Reel link and download.</p></div>
+        <div class="feature-card"><div class="icon">🎥</div><h3>HD / 4K Quality</h3><p>Download Reels in 720p, 1080p, or 4K quality.</p></div>
+        <div class="feature-card"><div class="icon">🔊</div><h3>Original Audio</h3><p>Keep the original sound/music from the Reel.</p></div>
+        <div class="feature-card"><div class="icon">📱</div><h3>All Devices</h3><p>Works on desktop, mobile, Android, iOS, any browser.</p></div>
+        <div class="feature-card"><div class="icon">💰</div><h3>100% Free</h3><p>Completely free to use. No hidden charges.</p></div>
+        <div class="feature-card"><div class="icon">🔒</div><h3>Secure & Private</h3><p>No data stored. Your downloads are 100% private.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section" id="how-to-use" style="background:var(--bg-alt)">
+    <div class="container">
+      <h2 class="section-title" data-i18n="how_title">How to Download Instagram Content</h2>
+      <p class="section-subtitle" data-i18n="how_subtitle">Follow these 3 simple steps to download any Instagram content</p>
+      <div class="steps">
+        <div class="step-card"><div class="step-number">1</div><h3 data-i18n="step1">Copy the Link</h3><p data-i18n="step1_desc">Open Instagram and copy the URL of the video, photo, reel, or story you want to download.</p></div>
+        <div class="step-card"><div class="step-number">2</div><h3 data-i18n="step2">Paste the Link</h3><p data-i18n="step2_desc">Come back to InstaSavvy and paste the Instagram link into the input box above.</p></div>
+        <div class="step-card"><div class="step-number">3</div><h3 data-i18n="step3">Download</h3><p data-i18n="step3_desc">Click Download, choose your preferred quality, and save the file to your device.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Types - Reels Focused -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="types_title">Download Instagram Reels Easily</h2>
+      <p class="section-subtitle" data-i18n="types_subtitle">Simply paste the Reels link and download in seconds.</p>
+      <div class="content-types" style="justify-content: center;">
+        <div class="content-type-card" style="border: 2px solid var(--primary);" onclick="navigate('/instagram-reels-downloader')">
+          <div class="icon">🎬</div><h4 data-i18n="nav_reels">Reels Downloader</h4><p data-i18n="type_reels_desc">Save Reels with audio, no watermark, HD & 4K</p>
+        </div>
+      </div>
+      <p style="text-align: center; margin-top: 20px; color: var(--text-secondary); font-size: 0.9rem;">
+        More features coming soon: Photos, Videos, Stories
+      </p>
+    </div>
+  </section>
+
+  <!-- Statistics -->
+  <section class="stats-banner">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item"><h2>10M+</h2><p data-i18n="stat_downloads">Downloads</p></div>
+        <div class="stat-item"><h2>190+</h2><p data-i18n="stat_countries">Countries</p></div>
+        <div class="stat-item"><h2>4.9★</h2><p data-i18n="stat_rating">User Rating</p></div>
+        <div class="stat-item"><h2>99.9%</h2><p data-i18n="stat_uptime">Uptime</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="testimonials_title">What Our Users Say</h2>
+      <p class="section-subtitle" data-i18n="testimonials_subtitle">Join millions of satisfied users worldwide</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card"><div class="stars">★★★★★</div><p>"The best Instagram downloader I've used. Works perfectly every time!"</p><div class="author">- Sarah M.</div></div>
+        <div class="testimonial-card"><div class="stars">★★★★★</div><p>"No watermark, HD quality, and super fast. Exactly what I needed!"</p><div class="author">- James K.</div></div>
+        <div class="testimonial-card"><div class="stars">★★★★★</div><p>"Love that I can download Reels with the original audio intact. Amazing tool!"</p><div class="author">- Priya S.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" style="background:var(--bg-alt)">
+    <div class="container">
+      <h2 class="section-title" data-i18n="faq_title">Frequently Asked Questions</h2>
+      <p class="section-subtitle" data-i18n="faq_subtitle">Everything you need to know about InstaSavvy</p>
+      <div class="faq-list">
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq_q1">How does InstaSavvy work?</span><span class="arrow">▼</span></div><div class="faq-answer" data-i18n="faq_a1">InstaSavvy fetches the public media from Instagram using the URL you provide. It extracts the video, photo, or reel and presents it for download. No data is stored on our servers.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq_q2">Is InstaSavvy free to use?</span><span class="arrow">▼</span></div><div class="faq-answer" data-i18n="faq_a2">Yes! InstaSavvy is completely free with no hidden charges, daily limits, or registration required.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq_q3">Can I download Instagram videos without watermark?</span><span class="arrow">▼</span></div><div class="faq-answer" data-i18n="faq_a3">Yes, all videos and reels downloaded through InstaSavvy are free from watermarks. We provide clean, original quality content.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq_q4">What quality options are available?</span><span class="arrow">▼</span></div><div class="faq-answer" data-i18n="faq_a4">We support multiple quality options including Standard Definition (SD), High Definition (HD 720p), Full HD (1080p), and 4K where available.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq_q5">Is it legal to download Instagram content?</span><span class="arrow">▼</span></div><div class="faq-answer" data-i18n="faq_a5">Downloading content for personal use is generally acceptable. Please respect copyright laws and the content creator's rights. Do not redistribute downloaded content without permission.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq_q6">Do you store my downloaded files?</span><span class="arrow">▼</span></div><div class="faq-answer" data-i18n="faq_a6">No. We do not store any downloaded files on our servers. All downloads are processed in real-time and streamed directly to you.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq_q7">Does it work on mobile devices?</span><span class="arrow">▼</span></div><div class="faq-answer" data-i18n="faq_a7">Yes! InstaSavvy works on all devices including Android, iOS, tablets, and desktop computers. The interface is fully responsive.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq_q8">Can I download from private Instagram accounts?</span><span class="arrow">▼</span></div><div class="faq-answer" data-i18n="faq_a8">No. We only support downloading content from public Instagram accounts. We respect user privacy and cannot access private profiles.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Preview -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="blog_section_title">Latest from Our Blog</h2>
+      <p class="section-subtitle" data-i18n="blog_section_subtitle">Tips, guides, and news about Instagram downloading</p>
+      <div class="blog-grid" id="homeBlogGrid"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 data-i18n="cta_title">Ready to Start Downloading?</h2>
+      <p data-i18n="cta_subtitle">Join millions of users worldwide. Download Instagram content for free!</p>
+      <button class="btn btn-primary" onclick="document.getElementById('mainUrlInput').focus();document.getElementById('mainUrlInput').scrollIntoView({behavior:'smooth'})" data-i18n="cta_btn">Start Downloading Now</button>
+    </div>
+  </section>
+</div>
+
+<!-- ===== PAGE: VIDEO DOWNLOADER ===== -->
+<div class="page" id="page-video" style="display:none">
+  <div class="breadcrumbs"><div class="container"><a href="/" onclick="return navigate('/')">Home</a> <span>›</span> Instagram Video Downloader</div></div>
+  <div class="page-header">
+    <div class="container">
+      <h1>📹 <span data-i18n="video_title">Instagram Video Downloader</span></h1>
+      <p data-i18n="video_desc">Download any Instagram video post in HD, Full HD, or 4K quality. No watermark, no registration required.</p>
+    </div>
+  </div>
+  <div class="tool-section">
+    <div class="container">
+      <div class="downloader-box">
+        <div class="input-group">
+          <input type="url" id="videoUrlInput" placeholder="Paste Instagram video link here...">
+          <button class="btn btn-primary" onclick="handleToolDownload('video')"><span data-i18n="btn_download">Download</span></button>
+        </div>
+        <div id="videoDownloadResult" class="download-result"></div>
+      </div>
+      <div class="ad-placeholder horizontal" data-i18n="ad_placeholder">— Advertisement —</div>
+      <div class="tool-instructions">
+        <h3 data-i18n="howto_title">How to Download Instagram Videos</h3>
+        <ol>
+          <li data-i18n="video_step1">Open Instagram and find the video you want to download</li>
+          <li data-i18n="video_step2">Tap the three dots (⋯) and select "Copy Link"</li>
+          <li data-i18n="video_step3">Paste the link in the input box above and click Download</li>
+          <li data-i18n="video_step4">Choose your preferred quality (SD, HD, Full HD, or 4K)</li>
+          <li data-i18n="video_step5">Click the download button to save the video to your device</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PAGE: PHOTO DOWNLOADER ===== -->
+<div class="page" id="page-photo" style="display:none">
+  <div class="breadcrumbs"><div class="container"><a href="/" onclick="return navigate('/')">Home</a> <span>›</span> Instagram Photo Downloader</div></div>
+  <div class="page-header">
+    <div class="container">
+      <h1>🖼️ <span data-i18n="photo_title">Instagram Photo Downloader</span></h1>
+      <p data-i18n="photo_desc">Download Instagram photos in full HD and 4K resolution. Supports single and multi-image carousel posts.</p>
+    </div>
+  </div>
+  <div class="tool-section">
+    <div class="container">
+      <div class="downloader-box">
+        <div class="input-group">
+          <input type="url" id="photoUrlInput" placeholder="Paste Instagram photo link here...">
+          <button class="btn btn-primary" onclick="handleToolDownload('photo')"><span data-i18n="btn_download">Download</span></button>
+        </div>
+        <div id="photoDownloadResult" class="download-result"></div>
+      </div>
+      <div class="tool-instructions">
+        <h3 data-i18n="howto_title">How to Download Instagram Photos</h3>
+        <ol>
+          <li data-i18n="photo_step1">Open Instagram and find the photo you want to download</li>
+          <li data-i18n="photo_step2">Tap the three dots (⋯) and select "Copy Link"</li>
+          <li data-i18n="photo_step3">Paste the link in the input box above and click Download</li>
+          <li data-i18n="photo_step4">View the photo preview and choose resolution</li>
+          <li data-i18n="photo_step5">Click Download to save the photo in high quality</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PAGE: REELS DOWNLOADER ===== -->
+<div class="page" id="page-reels" style="display:none">
+  <div class="breadcrumbs"><div class="container"><a href="/" onclick="return navigate('/')">Home</a> <span>›</span> Instagram Reels Downloader</div></div>
+  <div class="page-header">
+    <div class="container">
+      <h1>🎬 <span data-i18n="reels_title">Instagram Reels Downloader</span></h1>
+      <p data-i18n="reels_desc">Download Instagram Reels with original audio, no watermark. Supports HD and 4K quality.</p>
+    </div>
+  </div>
+  <div class="tool-section">
+    <div class="container">
+      <div class="downloader-box">
+        <div class="input-group">
+          <input type="url" id="reelsUrlInput" placeholder="Paste Instagram Reels link here...">
+          <button class="btn btn-primary" onclick="handleToolDownload('reels')"><span data-i18n="btn_download">Download</span></button>
+        </div>
+        <div id="reelsDownloadResult" class="download-result"></div>
+      </div>
+      <div class="tool-instructions">
+        <h3 data-i18n="howto_title">How to Download Instagram Reels</h3>
+        <ol>
+          <li data-i18n="reels_step1">Open Instagram and find the Reel you want to download</li>
+          <li data-i18n="reels_step2">Tap the share icon and select "Copy Link"</li>
+          <li data-i18n="reels_step3">Paste the link above and click Download</li>
+          <li data-i18n="reels_step4">Select your preferred quality (HD or 4K)</li>
+          <li data-i18n="reels_step5">Save the Reel with original audio, no watermark</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PAGE: STORY DOWNLOADER ===== -->
+<div class="page" id="page-story" style="display:none">
+  <div class="breadcrumbs"><div class="container"><a href="/" onclick="return navigate('/')">Home</a> <span>›</span> Instagram Story Downloader</div></div>
+  <div class="page-header">
+    <div class="container">
+      <h1>📖 <span data-i18n="story_title">Instagram Story Downloader</span></h1>
+      <p data-i18n="story_desc">Download Instagram stories in HD 1080p or 4K. Supports both photo and video stories with original audio.</p>
+    </div>
+  </div>
+  <div class="tool-section">
+    <div class="container">
+      <div class="downloader-box">
+        <div class="input-group">
+          <input type="url" id="storyUrlInput" placeholder="Paste Instagram story link here...">
+          <button class="btn btn-primary" onclick="handleToolDownload('story')"><span data-i18n="btn_download">Download</span></button>
+        </div>
+        <div id="storyDownloadResult" class="download-result"></div>
+      </div>
+      <div class="tool-instructions">
+        <h3 data-i18n="howto_title">How to Download Instagram Stories</h3>
+        <ol>
+          <li data-i18n="story_step1">Open Instagram and go to the story you want to download</li>
+          <li data-i18n="story_step2">Copy the story URL from your browser address bar</li>
+          <li data-i18n="story_step3">Paste the link above and click Download</li>
+          <li data-i18n="story_step4">Choose your preferred quality (HD or 4K)</li>
+          <li data-i18n="story_step5">Download the story with original audio</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PAGE: IGTV DOWNLOADER ===== -->
+<div class="page" id="page-igtv" style="display:none">
+  <div class="breadcrumbs"><div class="container"><a href="/" onclick="return navigate('/')">Home</a> <span>›</span> Instagram IGTV Downloader</div></div>
+  <div class="page-header">
+    <div class="container">
+      <h1>📺 <span data-i18n="igtv_title">Instagram IGTV Downloader</span></h1>
+      <p data-i18n="igtv_desc">Download IGTV videos in HD and 4K quality. Long videos, high resolution, no watermark.</p>
+    </div>
+  </div>
+  <div class="tool-section">
+    <div class="container">
+      <div class="downloader-box">
+        <div class="input-group">
+          <input type="url" id="igtvUrlInput" placeholder="Paste IGTV video link here...">
+          <button class="btn btn-primary" onclick="handleToolDownload('igtv')"><span data-i18n="btn_download">Download</span></button>
+        </div>
+        <div id="igtvDownloadResult" class="download-result"></div>
+      </div>
+      <div class="tool-instructions">
+        <h3 data-i18n="howto_title">How to Download IGTV Videos</h3>
+        <ol>
+          <li data-i18n="igtv_step1">Open Instagram and find the IGTV video you want</li>
+          <li data-i18n="igtv_step2">Copy the IGTV video URL</li>
+          <li data-i18n="igtv_step3">Paste the link above and click Download</li>
+          <li data-i18n="igtv_step4">Select your preferred quality (HD, Full HD, or 4K)</li>
+          <li data-i18n="igtv_step5">Download the IGTV video in high quality</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PAGE: PROFILE PICTURE DOWNLOADER ===== -->
+<div class="page" id="page-profile" style="display:none">
+  <div class="breadcrumbs"><div class="container"><a href="/" onclick="return navigate('/')">Home</a> <span>›</span> Instagram Profile Picture Downloader</div></div>
+  <div class="page-header">
+    <div class="container">
+      <h1>🙍 <span data-i18n="profile_title">Instagram Profile Picture Downloader</span></h1>
+      <p data-i18n="profile_desc">Download any public Instagram profile picture in full HD resolution.</p>
+    </div>
+  </div>
+  <div class="tool-section">
+    <div class="container">
+      <div class="downloader-box">
+        <div class="input-group">
+          <input type="text" id="profileUrlInput" placeholder="Enter Instagram username (e.g., @username)">
+          <button class="btn btn-primary" onclick="handleToolDownload('profile')"><span data-i18n="btn_download">Download</span></button>
+        </div>
+        <div id="profileDownloadResult" class="download-result"></div>
+      </div>
+      <div class="tool-instructions">
+        <h3 data-i18n="howto_title">How to Download Instagram Profile Picture</h3>
+        <ol>
+          <li data-i18n="profile_step1">Enter the Instagram username (with or without @)</li>
+          <li data-i18n="profile_step2">Click the Download button</li>
+          <li data-i18n="profile_step3">View the full-size profile picture preview</li>
+          <li data-i18n="profile_step4">Click Download to save the image</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PAGE: HIGHLIGHTS DOWNLOADER ===== -->
+<div class="page" id="page-highlights" style="display:none">
+  <div class="breadcrumbs"><div class="container"><a href="/" onclick="return navigate('/')">Home</a> <span>›</span> Instagram Highlights Downloader</div></div>
+  <div class="page-header">
+    <div class="container">
+      <h1>🔖 <span data-i18n="highlights_title">Instagram Highlights Downloader</span></h1>
+      <p data-i18n="highlights_desc">Download all stories from any public highlight reel. Supports batch download as ZIP.</p>
+    </div>
+  </div>
+  <div class="tool-section">
+    <div class="container">
+      <div class="downloader-box">
+        <div class="input-group">
+          <input type="url" id="highlightsUrlInput" placeholder="Paste Instagram highlights link here...">
+          <button class="btn btn-primary" onclick="handleToolDownload('highlights')"><span data-i18n="btn_download">Download</span></button>
+        </div>
+        <div id="highlightsDownloadResult" class="download-result"></div>
+      </div>
+      <div class="tool-instructions">
+        <h3 data-i18n="howto_title">How to Download Instagram Highlights</h3>
+        <ol>
+          <li data-i18n="highlights_step1">Open the Instagram profile and tap the highlight reel</li>
+          <li data-i18n="highlights_step2">Copy the URL of the highlight reel</li>
+          <li data-i18n="highlights_step3">Paste the link above and click Download</li>
+          <li data-i18n="highlights_step4">Browse all highlight stories and select the ones you want</li>
+          <li data-i18n="highlights_step5">Download individually or as a ZIP file</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PAGE: BULK DOWNLOADER ===== -->
+<div class="page" id="page-bulk" style="display:none">
+  <div class="breadcrumbs"><div class="container"><a href="/" onclick="return navigate('/')">Home</a> <span>›</span> Instagram Bulk Downloader</div></div>
+  <div class="page-header">
+    <div class="container">
+      <h1>📂 <span data-i18n="bulk_title">Instagram Bulk Downloader</span></h1>
+      <p data-i18n="bulk_desc">Download multiple Instagram posts at once. Select specific posts or download all from a public profile.</p>
+    </div>
+  </div>
+  <div class="tool-section">
+    <div class="container">
+      <div class="downloader-box">
+        <div class="input-group">
+          <input type="text" id="bulkUrlInput" placeholder="Enter Instagram username to download all posts">
+          <button class="btn btn-primary" onclick="handleToolDownload('bulk')"><span data-i18n="btn_download">Fetch Posts</span></button>
+        </div>
+        <div id="bulkDownloadResult" class="download-result"></div>
+      </div>
+      <div class="tool-instructions">
+        <h3 data-i18n="howto_title">How to Bulk Download Instagram Posts</h3>
+        <ol>
+          <li data-i18n="bulk_step1">Enter the Instagram username of the public profile</li>
+          <li data-i18n="bulk_step2">Click Fetch Posts to load recent content</li>
+          <li data-i18n="bulk_step3">Select individual posts or choose "Select All"</li>
+          <li data-i18n="bulk_step4">Click Download Selected to save them as ZIP</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PAGE: BLOG ===== -->
+<div class="page" id="page-blog" style="display:none">
+  <div class="breadcrumbs"><div class="container"><a href="/" onclick="return navigate('/')">Home</a> <span>›</span> Blog</div></div>
+  <div class="page-header">
+    <div class="container">
+      <h1 data-i18n="blog_title">InstaSavvy Blog</h1>
+      <p data-i18n="blog_subtitle">Tips, guides, and tutorials for downloading Instagram content</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="blog-header">
+        <div class="blog-search">
+          <input type="text" id="blogSearchInput" placeholder="Search articles..." oninput="filterBlogPosts()">
+          <button class="btn btn-secondary btn-sm" onclick="filterBlogPosts()">🔍</button>
+        </div>
+      </div>
+      <div class="blog-filters">
+        <button class="active" onclick="filterBlogPosts('all',this)" data-i18n="blog_all">All</button>
+        <button onclick="filterBlogPosts('guide',this)">Guides</button>
+        <button onclick="filterBlogPosts('tips',this)">Tips</button>
+        <button onclick="filterBlogPosts('tutorial',this)">Tutorials</button>
+        <button onclick="filterBlogPosts('news',this)">News</button>
+      </div>
+      <div class="blog-grid" id="blogGrid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PAGE: BLOG POST ===== -->
+<div class="page" id="page-blog-post" style="display:none">
+  <div class="breadcrumbs"><div class="container"><a href="/" onclick="return navigate('/')">Home</a> <span>›</span> <a href="/blog" onclick="return navigate('/blog')">Blog</a> <span>›</span> <span id="blogPostTitle"></span></div></div>
+  <div class="section">
+    <div class="container page-content" id="blogPostContent"></div>
+  </div>
+</div>
+
+<!-- ===== PAGE: FAQ ===== -->
+<div class="page" id="page-faq" style="display:none">
+  <div class="breadcrumbs"><div class="container"><a href="/" onclick="return navigate('/')">Home</a> <span>›</span> FAQ</div></div>
+  <div class="page-header">
+    <div class="container">
+      <h1 data-i18n="faq_page_title">Frequently Asked Questions</h1>
+      <p data-i18n="faq_page_subtitle">Find answers to common questions about InstaSavvy</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="faq-list">
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq_q1">How does InstaSavvy work?</span><span class="arrow">▼</span></div><div class="faq-answer" data-i18n="faq_a1">InstaSavvy fetches the public media from Instagram using the URL you provide. It extracts the video, photo, or reel and presents it for download. No data is stored on our servers.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq_q2">Is InstaSavvy free to use?</span><span class="arrow">▼</span></div><div class="faq-answer" data-i18n="faq_a2">Yes! InstaSavvy is completely free with no hidden charges, daily limits, or registration required.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq_q3">Can I download Instagram videos without watermark?</span><span class="arrow">▼</span></div><div class="faq-answer" data-i18n="faq_a3">Yes, all videos and reels downloaded through InstaSavvy are free from watermarks. We provide clean, original quality content.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq_q4">What quality options are available?</span><span class="arrow">▼</span></div><div class="faq-answer" data-i18n="faq_a4">We support multiple quality options including Standard Definition (SD), High Definition (HD 720p), Full HD (1080p), and 4K where available.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq_q5">Is it legal to download Instagram content?</span><span class="arrow">▼</span></div><div class="faq-answer" data-i18n="faq_a5">Downloading content for personal use is generally acceptable. Please respect copyright laws and the content creator's rights. Do not redistribute downloaded content without permission.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq_q6">Do you store my downloaded files?</span><span class="arrow">▼</span></div><div class="faq-answer" data-i18n="faq_a6">No. We do not store any downloaded files on our servers. All downloads are processed in real-time and streamed directly to you.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq_q7">Does it work on mobile devices?</span><span class="arrow">▼</span></div><div class="faq-answer" data-i18n="faq_a7">Yes! InstaSavvy works on all devices including Android, iOS, tablets, and desktop computers. The interface is fully responsive.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq_q8">How many downloads can I do per day?</span><span class="arrow">▼</span></div><div class="faq-answer" data-i18n="faq_a8">There are no daily limits. You can download as much content as you want, completely free, 24/7.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq_q9">Can I download from private Instagram accounts?</span><span class="arrow">▼</span></div><div class="faq-answer" data-i18n="faq_a9">No. We only support downloading content from public Instagram accounts. We respect user privacy and cannot access private profiles.</div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span data-i18n="faq_q10">What file formats are supported?</span><span class="arrow">▼</span></div><div class="faq-answer" data-i18n="faq_a10">Videos are downloaded as MP4 files and photos as JPG/PNG files. These are the most widely compatible formats.</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PAGE: ABOUT ===== -->
+<div class="page" id="page-about" style="display:none">
+  <div class="breadcrumbs"><div class="container"><a href="/" onclick="return navigate('/')">Home</a> <span>›</span> About</div></div>
+  <div class="page-header">
+    <div class="container">
+      <h1>About InstaReels</h1>
+      <p>Your trusted Instagram Reels downloader — free, fast, and built for everyone</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container page-content">
+      <h2>Who We Are</h2>
+      <p>InstaReels is a free web-based tool designed to help you download Instagram Reels quickly and easily. Our platform is built by a small team of developers who understand the frustration of not being able to save your favorite Reels for offline viewing. We created InstaReels to solve that problem — no apps, no sign-ups, no hidden fees.</p>
+      <p>Since our launch, we have helped millions of users worldwide download Instagram Reels in the highest available quality, including Full HD and 4K, with original audio preserved. Our service works on all devices — phones, tablets, laptops, and desktops.</p>
+
+      <h2>Our Mission</h2>
+      <p>We believe that publicly available content should be accessible for personal offline use. Our mission is to provide the fastest, most reliable, and completely free tool for downloading Instagram Reels. We are committed to keeping our service free forever, supported by minimal advertising.</p>
+      <p>We continuously update our technology to stay compatible with Instagram's latest changes, ensuring you can always download Reels when you need them.</p>
+
+      <h2>Why Choose InstaReels?</h2>
+      <ul>
+        <li><strong>100% Free:</strong> No hidden charges, subscription fees, or credit card required.</li>
+        <li><strong>No Registration:</strong> No sign-up or login needed. Just paste the URL and download.</li>
+        <li><strong>Highest Quality:</strong> Download Reels in Full HD 1080p or 4K where available.</li>
+        <li><strong>Original Audio:</strong> All downloads preserve the original reel audio.</li>
+        <li><strong>No Watermark:</strong> Clean, original content without any watermark.</li>
+        <li><strong>Works Everywhere:</strong> Compatible with all browsers and devices.</li>
+        <li><strong>Privacy First:</strong> We do not store your data or downloaded content.</li>
+      </ul>
+
+      <h2>Our Values</h2>
+      <ul>
+        <li><strong>Privacy First:</strong> We do not collect, store, or share personal information. Your privacy is our top priority.</li>
+        <li><strong>Free Forever:</strong> InstaReels will always remain free. We believe access to public content should never cost money.</li>
+        <li><strong>Quality First:</strong> We deliver downloads in the best possible quality, up to 4K resolution.</li>
+        <li><strong>User Experience:</strong> Our tool is designed to be simple, intuitive, and fast.</li>
+      </ul>
+
+      <h2>Our Story</h2>
+      <p>InstaReels was created in 2024 by a group of developers who loved watching Instagram Reels but wished there was an easy way to save them. Existing tools were slow, filled with ads, or required complex registration. We built InstaReels to be different — fast, clean, and truly free.</p>
+      <p>Today, InstaReels serves thousands of downloads every day from users across 190+ countries. We are proud to help people save and enjoy content from their favorite creators, even when offline.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PAGE: CONTACT ===== -->
+<div class="page" id="page-contact" style="display:none">
+  <div class="breadcrumbs"><div class="container"><a href="/" onclick="return navigate('/')">Home</a> <span>›</span> Contact</div></div>
+  <div class="page-header">
+    <div class="container">
+      <h1 data-i18n="contact_title">Contact Us</h1>
+      <p data-i18n="contact_subtitle">Have a question or feedback? We'd love to hear from you.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="contact-form">
+        <div class="form-group">
+          <label for="contactName" data-i18n="contact_name">Your Name</label>
+          <input type="text" id="contactName" placeholder="John Doe">
+        </div>
+        <div class="form-group">
+          <label for="contactEmail" data-i18n="contact_email">Your Email</label>
+          <input type="email" id="contactEmail" placeholder="john@example.com">
+        </div>
+        <div class="form-group">
+          <label for="contactSubject" data-i18n="contact_subject">Subject</label>
+          <select id="contactSubject">
+            <option value="general" data-i18n="contact_subj_general">General Inquiry</option>
+            <option value="bug" data-i18n="contact_subj_bug">Bug Report</option>
+            <option value="feature" data-i18n="contact_subj_feature">Feature Request</option>
+            <option value="dmca" data-i18n="contact_subj_dmca">DMCA Notice</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="contactMessage" data-i18n="contact_message">Your Message</label>
+          <textarea id="contactMessage" placeholder="Write your message here..."></textarea>
+        </div>
+        <button class="btn btn-primary" onclick="submitContact()" style="width:100%"><span data-i18n="contact_send">Send Message</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PAGE: PRIVACY POLICY ===== -->
+<div class="page" id="page-privacy" style="display:none">
+  <div class="breadcrumbs"><div class="container"><a href="/" onclick="return navigate('/')">Home</a> <span>›</span> Privacy Policy</div></div>
+  <div class="page-header">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container page-content">
+      <p><em>Last Updated: May 2026</em></p>
+
+      <h2>1. Introduction</h2>
+      <p>InstaReels ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services. Please read this policy carefully. By using our website, you consent to the practices described in this policy.</p>
+
+      <h2>2. Information We Collect</h2>
+      <h3>2.1 Personal Information</h3>
+      <p>We do NOT collect, store, or process any personal information. We do not require registration, login, or account creation. The Instagram URLs you paste into our tool are processed in real-time and are not stored on our servers.</p>
+      <h3>2.2 Non-Personal Information</h3>
+      <p>We may automatically collect certain non-personal information when you visit our website, including:</p>
+      <ul>
+        <li>Browser type and version</li>
+        <li>Device type and operating system</li>
+        <li>Pages visited and time spent on the site</li>
+        <li>Referring URL and exit pages</li>
+        <li>Aggregate usage statistics</li>
+      </ul>
+      <p>This information is collected anonymously and cannot be used to identify individual users.</p>
+
+      <h2>3. How We Use Your Information</h2>
+      <p>We use the limited information we collect for the following purposes:</p>
+      <ul>
+        <li>To operate, maintain, and improve our website and services</li>
+        <li>To analyze usage patterns and optimize user experience</li>
+        <li>To display relevant advertisements through third-party ad networks</li>
+        <li>To comply with legal obligations</li>
+      </ul>
+
+      <h2>4. Advertising and Third-Party Services</h2>
+      <p>We use Google AdSense and other third-party advertising networks to display ads on our website. These ad networks may use cookies and similar technologies to serve personalized advertisements based on your browsing history and interests.</p>
+      <p>Google AdSense uses the DoubleClick cookie to serve relevant ads. You can learn more about how Google uses your data at <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="nofollow">https://policies.google.com/technologies/partner-sites</a>.</p>
+      <p>You can opt out of personalized advertising by visiting <a href="https://adssettings.google.com" target="_blank" rel="nofollow">Google Ad Settings</a>.</p>
+
+      <h2>5. Cookies</h2>
+      <p>We use cookies and similar tracking technologies for the following purposes:</p>
+      <ul>
+        <li><strong>Essential Cookies:</strong> Required for basic site functionality (e.g., language preference, theme selection).</li>
+        <li><strong>Analytics Cookies:</strong> Used to understand how visitors interact with our website.</li>
+        <li><strong>Advertising Cookies:</strong> Used by Google AdSense and other ad networks to deliver relevant advertisements.</li>
+      </ul>
+      <p>You can control cookie settings through your browser preferences. Disabling certain cookies may affect your experience on our site.</p>
+
+      <h2>6. Third-Party Links</h2>
+      <p>Our website may contain links to third-party websites or services. We are not responsible for the privacy practices of these third parties. We encourage you to review their privacy policies before providing any personal information.</p>
+
+      <h2>7. Data Security</h2>
+      <p>We implement appropriate technical and organizational security measures to protect against unauthorized access, alteration, disclosure, or destruction of data. However, no method of transmission over the Internet is 100% secure. We cannot guarantee absolute security.</p>
+
+      <h2>8. Children's Privacy</h2>
+      <p>Our service is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If we learn that a child under 13 has provided us with personal information, we will take steps to delete such information. If you believe we have collected information from a child under 13, please contact us immediately.</p>
+
+      <h2>9. Your Rights</h2>
+      <p>Depending on your jurisdiction, you may have the following rights regarding your personal data:</p>
+      <ul>
+        <li><strong>Right to Access:</strong> Request information about what data we hold about you.</li>
+        <li><strong>Right to Deletion:</strong> Request deletion of any data we may hold about you.</li>
+        <li><strong>Right to Opt-Out:</strong> Opt out of personalized advertising through Google Ad Settings.</li>
+        <li><strong>Right to Withdraw Consent:</strong> Withdraw consent for cookies and tracking through browser settings.</li>
+      </ul>
+      <p>To exercise any of these rights, please contact us through our Contact page.</p>
+
+      <h2>10. GDPR Compliance (European Users)</h2>
+      <p>If you are a resident of the European Economic Area (EEA), you have additional rights under the General Data Protection Regulation (GDPR). We process your data based on your consent, which you provide by using our website. You have the right to:
+      <ul>
+        <li>Access your personal data</li>
+        <li>Rectify inaccurate data</li>
+        <li>Erase your data ("right to be forgotten")</li>
+        <li>Restrict processing of your data</li>
+        <li>Data portability</li>
+        <li>Object to processing</li>
+      </ul>
+      </p>
+
+      <h2>11. CCPA Compliance (California Users)</h2>
+      <p>If you are a California resident, you have rights under the California Consumer Privacy Act (CCPA), including the right to request disclosure of information collected, the right to request deletion, and the right to opt out of the sale of personal information. We do not sell personal information.</p>
+
+      <h2>12. Changes to This Policy</h2>
+      <p>We reserve the right to update this Privacy Policy at any time. Changes will be posted on this page with an updated revision date. We encourage you to review this policy periodically. Continued use of our website after changes constitutes acceptance of the updated policy.</p>
+
+      <h2>13. Contact Information</h2>
+      <p>If you have questions, concerns, or requests regarding this Privacy Policy, please contact us through our <a href="/contact" onclick="return navigate('/contact')">Contact page</a> or email us at privacy@instareels.app.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PAGE: TERMS OF SERVICE ===== -->
+<div class="page" id="page-terms" style="display:none">
+  <div class="breadcrumbs"><div class="container"><a href="/" onclick="return navigate('/')">Home</a> <span>›</span> Terms of Service</div></div>
+  <div class="page-header">
+    <div class="container">
+      <h1>Terms of Service</h1>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container page-content">
+      <p><em>Last Updated: May 2026</em></p>
+
+      <h2>1. Acceptance of Terms</h2>
+      <p>By accessing or using InstaReels ("the Service"), you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions, you must not access or use the Service. These terms apply to all visitors, users, and others who access or use the Service.</p>
+
+      <h2>2. Service Description</h2>
+      <p>InstaReels is a free, web-based tool that allows users to download publicly available Instagram Reels for personal, non-commercial use. The Service processes Instagram URLs provided by users and returns downloadable media files. We do not host, store, or distribute any copyrighted content. All content remains the property of the original creators and Instagram.</p>
+      <p>The Service is provided for personal use only. Users are solely responsible for ensuring their use of downloaded content complies with applicable laws and Instagram's terms of service.</p>
+
+      <h2>3. User Responsibilities</h2>
+      <p>As a user of the Service, you agree to:</p>
+      <ul>
+        <li>Use the Service only for lawful purposes and in accordance with these Terms</li>
+        <li>Not use the Service to download content for redistribution, resale, or commercial purposes</li>
+        <li>Not use the Service to violate any applicable laws or regulations</li>
+        <li>Not attempt to circumvent any technical measures we implement to ensure fair use</li>
+        <li>Not use automated scripts, bots, or scrapers to access the Service without our express permission</li>
+        <li>Respect the intellectual property rights of content creators</li>
+      </ul>
+
+      <h2>4. Intellectual Property Rights</h2>
+      <p>All content downloaded through InstaReels remains the intellectual property of the original content creators and/or Instagram. The Service does not claim any ownership over downloaded content. Users acknowledge that:</p>
+      <ul>
+        <li>Downloaded content is for personal use only</li>
+        <li>Redistribution, republication, or commercial use of downloaded content requires explicit permission from the copyright owner</li>
+        <li>The Service name "InstaReels," logo, and website design are our intellectual property</li>
+        <li>Instagram and its logos are trademarks of Meta Platforms, Inc.</li>
+      </ul>
+
+      <h2>5. Copyright and DMCA Compliance</h2>
+      <p>We respect the intellectual property rights of others and expect our users to do the same. In accordance with the Digital Millennium Copyright Act (DMCA), we will respond promptly to claims of copyright infringement.</p>
+      <p>If you believe that any content available through our Service infringes your copyright, please submit a DMCA notice to our designated agent containing:</p>
+      <ul>
+        <li>Your physical or electronic signature</li>
+        <li>Identification of the copyrighted work claimed to be infringed</li>
+        <li>Identification of the infringing material and information reasonably sufficient to locate it</li>
+        <li>Your contact information (address, telephone number, email)</li>
+        <li>A statement that you have a good faith belief that the use is not authorized</li>
+        <li>A statement, under penalty of perjury, that the information in the notice is accurate</li>
+      </ul>
+      <p>DMCA notices should be sent to our <a href="/dmca" onclick="return navigate('/dmca')">DMCA page</a> or through our <a href="/contact" onclick="return navigate('/contact')">Contact page</a>.</p>
+
+      <h2>6. Disclaimer of Warranties</h2>
+      <p>THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE.</p>
+
+      <h2>7. Limitation of Liability</h2>
+      <p>IN NO EVENT SHALL InstaReels, ITS OPERATORS, OR AFFILIATES BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATING TO YOUR USE OF THE SERVICE, INCLUDING BUT NOT LIMITED TO DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+
+      <h2>8. Indemnification</h2>
+      <p>You agree to indemnify, defend, and hold harmless InstaReels and its operators from any claims, liabilities, damages, losses, costs, or expenses arising out of your use of the Service, your violation of these Terms, or your violation of any third-party rights.</p>
+
+      <h2>9. Third-Party Links and Services</h2>
+      <p>The Service may contain links to third-party websites or services that are not owned or controlled by us. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party websites or services.</p>
+
+      <h2>10. Termination</h2>
+      <p>We reserve the right to terminate or suspend access to the Service immediately, without prior notice, for any reason, including violation of these Terms. Upon termination, your right to use the Service will cease immediately.</p>
+
+      <h2>11. Changes to Terms</h2>
+      <p>We reserve the right to modify or replace these Terms at any time. Changes will be effective immediately upon posting to this page. Your continued use of the Service after any changes constitutes acceptance of the new Terms. We encourage you to review these Terms periodically.</p>
+
+      <h2>12. Governing Law</h2>
+      <p>These Terms shall be governed by and construed in accordance with applicable laws. Any disputes arising from these Terms shall be resolved in the appropriate courts.</p>
+
+      <h2>13. Contact Information</h2>
+      <p>For questions about these Terms, please contact us through our <a href="/contact" onclick="return navigate('/contact')">Contact page</a> or visit our <a href="/dmca" onclick="return navigate('/dmca')">DMCA page</a> for copyright concerns.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PAGE: DMCA ===== -->
+<div class="page" id="page-dmca" style="display:none">
+  <div class="breadcrumbs"><div class="container"><a href="/" onclick="return navigate('/')">Home</a> <span>›</span> DMCA</div></div>
+  <div class="page-header">
+    <div class="container">
+      <h1>DMCA Notice & Takedown Policy</h1>
+      <p>Digital Millennium Copyright Act compliance and copyright infringement procedures</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container page-content">
+      <p><em>Last Updated: May 2026</em></p>
+
+      <h2>1. Copyright Infringement Notification</h2>
+      <p>InstaReels respects the intellectual property rights of others and expects its users to do the same. In accordance with the Digital Millennium Copyright Act (DMCA), we will respond promptly to notices of alleged copyright infringement that comply with the DMCA and other applicable laws.</p>
+      <p>If you believe that any content available through our Service infringes your copyright, please send a written DMCA notice to our Designated Copyright Agent containing the following information:</p>
+      <ol>
+        <li>A physical or electronic signature of the copyright owner or a person authorized to act on their behalf</li>
+        <li>Identification of the copyrighted work claimed to have been infringed</li>
+        <li>Identification of the material that is claimed to be infringing, including information reasonably sufficient to locate the material</li>
+        <li>Your contact information, including address, telephone number, and email address</li>
+        <li>A statement that you have a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law</li>
+        <li>A statement that the information in the notification is accurate, and under penalty of perjury, that you are authorized to act on behalf of the copyright owner</li>
+      </ol>
+
+      <h2>2. DMCA Notice Submission</h2>
+      <p>Please send your DMCA notice to:</p>
+      <p><strong>Email:</strong> dmca@instareels.app<br>
+      <strong>Or through our:</strong> <a href="/contact" onclick="return navigate('/contact')">Contact page</a> (select "DMCA Notice" as subject)</p>
+
+      <h2>3. Counter-Notification</h2>
+      <p>If you believe that your content was removed or access to it was disabled as a result of a mistake or misidentification, you may file a counter-notification with us. A counter-notification must include:</p>
+      <ol>
+        <li>Your physical or electronic signature</li>
+        <li>Identification of the material that has been removed or to which access has been disabled</li>
+        <li>A statement under penalty of perjury that you have a good faith belief that the material was removed as a result of mistake or misidentification</li>
+        <li>Your name, address, telephone number, and email address</li>
+        <li>A statement that you consent to the jurisdiction of the federal court in your district</li>
+      </ol>
+
+      <h2>4. Repeat Infringers</h2>
+      <p>In accordance with the DMCA and other applicable laws, InstaReels has adopted a policy of terminating, in appropriate circumstances, users who are deemed to be repeat infringers. We may also limit access to the Service and/or terminate the accounts of any users who infringe any intellectual property rights of others.</p>
+
+      <h2>5. Disclaimer</h2>
+      <p>InstaReels is a search tool and does not host, store, or distribute any copyrighted content. All content downloaded through our Service originates from Instagram's publicly available infrastructure. We encourage all users to respect copyright laws and the rights of content creators.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PAGE: ADVERTISE ===== -->
+<div class="page" id="page-advertise" style="display:none">
+  <div class="breadcrumbs"><div class="container"><a href="/" onclick="return navigate('/')">Home</a> <span>›</span> Advertise with Us</div></div>
+  <div class="page-header">
+    <div class="container">
+      <h1>Advertise with Us</h1>
+      <p>Reach millions of users worldwide — promote your brand on InstaReels</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container page-content">
+      <h2>Why Advertise on InstaReels?</h2>
+      <p>InstaReels is a fast-growing platform that attracts millions of visitors every month from around the world. Our users are engaged, tech-savvy, and actively seeking content — making us an ideal platform for your advertising campaigns.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin:32px 0;">
+        <div style="padding:24px;background:var(--bg-alt);border-radius:12px;text-align:center;">
+          <div style="font-size:2.5rem;margin-bottom:8px;">🌍</div>
+          <div style="font-size:1.8rem;font-weight:700;color:var(--primary);">190+</div>
+          <div style="color:var(--text-secondary);">Countries Reached</div>
+        </div>
+        <div style="padding:24px;background:var(--bg-alt);border-radius:12px;text-align:center;">
+          <div style="font-size:2.5rem;margin-bottom:8px;">📈</div>
+          <div style="font-size:1.8rem;font-weight:700;color:var(--primary);">10M+</div>
+          <div style="color:var(--text-secondary);">Monthly Downloads</div>
+        </div>
+        <div style="padding:24px;background:var(--bg-alt);border-radius:12px;text-align:center;">
+          <div style="font-size:2.5rem;margin-bottom:8px;">👥</div>
+          <div style="font-size:1.8rem;font-weight:700;color:var(--primary);">2M+</div>
+          <div style="color:var(--text-secondary);">Monthly Visitors</div>
+        </div>
+        <div style="padding:24px;background:var(--bg-alt);border-radius:12px;text-align:center;">
+          <div style="font-size:2.5rem;margin-bottom:8px;">📱</div>
+          <div style="font-size:1.8rem;font-weight:700;color:var(--primary);">65%</div>
+          <div style="color:var(--text-secondary);">Mobile Traffic</div>
+        </div>
+      </div>
+
+      <h2>Advertising Opportunities</h2>
+      <p>We offer the following advertising options:</p>
+      <ul>
+        <li><strong>Display Ads:</strong> Banner advertisements on our homepage and tool pages</li>
+        <li><strong>Sponsored Content:</strong> Featured placement in our blog and guides section</li>
+        <li><strong>Premium Placement:</strong> High-visibility ad slots with guaranteed impressions</li>
+      </ul>
+
+      <h2>Why Partner With Us?</h2>
+      <ul>
+        <li>High-intent audience actively seeking content solutions</li>
+        <li>Global reach across 190+ countries</li>
+        <li>Competitive CPM rates</li>
+        <li>Detailed performance reporting</li>
+        <li>Flexible campaign options</li>
+      </ul>
+
+      <h2>Get in Touch</h2>
+      <p>Interested in advertising on InstaReels? We would love to hear from you. Please reach out through our <a href="/contact" onclick="return navigate('/contact')">Contact page</a> with "Advertising Inquiry" as the subject, or email us directly at ads@instareels.app.</p>
+      <p>We will respond within 48 hours with our media kit and available ad inventory.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== TOAST CONTAINER ===== -->
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4 data-i18n="footer_about">About</h4>
+        <p style="color:#a0a0b0;font-size:0.85rem;line-height:1.7;" data-i18n="footer_about_text">InstaReels is the free, fast Instagram Reels downloader. Download Reels in HD/4K with original audio, no watermark.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="YouTube">▶️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="/" onclick="return navigate('/')">Home</a>
+        <a href="/about" onclick="return navigate('/about')">About Us</a>
+        <a href="/faq" onclick="return navigate('/faq')">FAQ</a>
+        <a href="/blog" onclick="return navigate('/blog')">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="/contact" onclick="return navigate('/contact')">Contact Us</a>
+        <a href="/advertise" onclick="return navigate('/advertise')">Advertise with Us</a>
+        <a href="/dmca" onclick="return navigate('/dmca')">DMCA Notice</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="/privacy-policy" onclick="return navigate('/privacy-policy')">Privacy Policy</a>
+        <a href="/terms-of-service" onclick="return navigate('/terms-of-service')">Terms of Service</a>
+        <a href="/contact" onclick="return navigate('/contact')">Report Issue</a>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      <p><strong>Disclaimer:</strong> InstaReels is an independent tool and is not affiliated with, endorsed by, or connected to Instagram or Meta Platforms, Inc. All trademarks, logos, and brand names are the property of their respective owners. Content downloaded through this service is for personal use only. Users are responsible for respecting copyright laws and the rights of content creators. By using this service, you agree to our <a href="/terms-of-service" onclick="return navigate('/terms-of-service')">Terms of Service</a> and <a href="/privacy-policy" onclick="return navigate('/privacy-policy')">Privacy Policy</a>.</p>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 InstaReels. All rights reserved.</span>
+      <span>
+        <select class="lang-select" onchange="switchLanguage(this.value)">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="de">Deutsch</option>
+          <option value="pt">Português</option>
+          <option value="hi">हिन्दी</option>
+          <option value="id">Bahasa Indonesia</option>
+          <option value="it">Italiano</option>
+          <option value="ja">日本語</option>
+          <option value="ko">한국어</option>
+          <option value="zh-CN">简体中文</option>
+          <option value="zh-TW">繁體中文</option>
+        </select>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== MAIN JAVASCRIPT ===== -->
+<script src="src/js/i18n.js"></script>
+<script src="src/js/main.js"></script>
+</body>
+</html>

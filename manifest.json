@@ -1,0 +1,37 @@
+{
+  "name": "InstaSavvy - Instagram Downloader",
+  "short_name": "InstaSavvy",
+  "description": "Free Instagram content downloader. Download videos, photos, reels, stories, IGTV & profile pictures.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#833ab4",
+  "background_color": "#ffffff",
+  "categories": ["social", "entertainment", "utilities"],
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" },
+    { "src": "/favicon.svg", "sizes": "48x48", "type": "image/svg+xml" },
+    { "src": "/favicon.svg", "sizes": "72x72", "type": "image/svg+xml" },
+    { "src": "/favicon.svg", "sizes": "96x96", "type": "image/svg+xml" },
+    { "src": "/favicon.svg", "sizes": "144x144", "type": "image/svg+xml" },
+    { "src": "/favicon.svg", "sizes": "192x192", "type": "image/svg+xml" },
+    { "src": "/favicon.svg", "sizes": "512x512", "type": "image/svg+xml" }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "InstaSavvy Homepage"
+    }
+  ],
+  "shortcuts": [
+    { "name": "Download Video", "short_name": "Video", "url": "/instagram-video-downloader", "icons": [{ "src": "/favicon.svg", "sizes": "96x96" }] },
+    { "name": "Download Reels", "short_name": "Reels", "url": "/instagram-reels-downloader", "icons": [{ "src": "/favicon.svg", "sizes": "96x96" }] },
+    { "name": "Download Photo", "short_name": "Photo", "url": "/instagram-photo-downloader", "icons": [{ "src": "/favicon.svg", "sizes": "96x96" }] },
+    { "name": "Download Story", "short_name": "Story", "url": "/instagram-story-downloader", "icons": [{ "src": "/favicon.svg", "sizes": "96x96" }] }
+  ]
+}
